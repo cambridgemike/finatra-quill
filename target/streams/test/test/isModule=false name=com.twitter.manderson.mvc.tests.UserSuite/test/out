@@ -1,0 +1,16 @@
+[0m[[0minfo[0m] [0m[32mUserSuite:[0m[0m
+[0m[[0minfo[0m] [0m[32m- User.save[0m[0m
+[0m[[0minfo[0m] [0m[32m- User.findById[0m[0m
+[0m[[0minfo[0m] [0m[31m- User.tweets *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  com.twitter.finagle.mysql.ServerError: Unknown column 'user.username' in 'field list'[0m[0m
+[0m[[0minfo[0m] [0m[31m  at com.twitter.finagle.mysql.ClientDispatcher$$anonfun$com$twitter$finagle$mysql$ClientDispatcher$$decodePacket$3.apply(ClientDispatcher.scala:215)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at com.twitter.finagle.mysql.ClientDispatcher$$anonfun$com$twitter$finagle$mysql$ClientDispatcher$$decodePacket$3.apply(ClientDispatcher.scala:213)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at com.twitter.util.Future$$anonfun$flatMap$1.apply(Future.scala:1092)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at com.twitter.util.Future$$anonfun$flatMap$1.apply(Future.scala:1091)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at com.twitter.util.ConstFuture$$anon$6.run(Future.scala:1481)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at com.twitter.concurrent.LocalScheduler$Activation.run(Scheduler.scala:200)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at com.twitter.concurrent.LocalScheduler$Activation.submit(Scheduler.scala:158)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at com.twitter.concurrent.LocalScheduler.submit(Scheduler.scala:272)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at com.twitter.concurrent.Scheduler$.submit(Scheduler.scala:108)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at com.twitter.util.Promise.runq(Promise.scala:405)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m

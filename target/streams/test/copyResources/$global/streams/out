@@ -1,0 +1,3 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/manderson/workspace/quilltest/finatra-guice/src/test/resources/drop-db.sql,/Users/manderson/workspace/quilltest/finatra-guice/target/scala-2.11/test-classes/drop-db.sql)[0m
+[0m[[0mdebug[0m] [0m	(/Users/manderson/workspace/quilltest/finatra-guice/src/test/resources/schema.sql,/Users/manderson/workspace/quilltest/finatra-guice/target/scala-2.11/test-classes/schema.sql)[0m
