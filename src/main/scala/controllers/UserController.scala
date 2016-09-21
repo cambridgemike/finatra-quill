@@ -11,33 +11,14 @@ class UserController @Inject()(
   context: Context
 ) extends Controller with Logging {
 
-  private val store = new UserStore(context)
-
-  sealed trait UserUpdate
-
-  case class TweepUpdate(
-    handle: String
-  ) extends UserUpdate
-
-  case class EmployeeUpdate(
-    account: String
-  ) extends UserUpdate
+  private val userStore = new UserStore(context)
 
   get("/") { request : Request =>
-    store.all()
+    userStore.all().map(new UserView(_))
   }
 
   post("/") { request: Request =>
     val mike = User(username = "cambridgemike", name = Some(FullName("Mike", "Anderson")))
-    store.save(mike)
-  }
-
-  get("/requesttest") { request : UserUpdate =>
-    var resp = request match {
-      case TweepUpdate(handle)     => "handle is " + handle
-      case EmployeeUpdate(account) => "account is " + account
-    }
-
-    response.ok.json(resp)
+    userStore.save(mike)
   }
 }
